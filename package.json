@@ -1,0 +1,30 @@
+{
+  "name": "coerce-property",
+  "description": "Coerce property decorators",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "Rinat Arsaev",
+    "email": "krickray@gmail.com"
+  },
+  "main": "lib/index.js",
+  "module": "lib-esm/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "start": "jest --watchAll",
+    "clean": "shx rm -rf lib lib-esm",
+    "build": "yarn clean && tsc && tsc -m es6 -t es6 --outDir lib-esm",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.4.5",
+    "@babel/types": "^7.4.4",
+    "@types/jest": "^24.0.14",
+    "jest": "^24.8.0",
+    "shx": "^0.3.2",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.5.2"
+  }
+}
