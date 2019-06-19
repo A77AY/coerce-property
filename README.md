@@ -2,7 +2,7 @@
 
 Utility decorator functions for coercing Angular component `@Inputs` into specific types.
 
-Uses [Angular CDK](https://material.angular.io/cdk/categories) coercions.
+Used by [Angular CDK](https://material.angular.io/cdk/categories) coercions.
 
 ## Installation
 

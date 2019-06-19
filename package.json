@@ -1,11 +1,20 @@
 {
   "name": "coerce-property",
-  "description": "Utility decorator functions for coercing @Inputs into specific types",
+  "description": "Utility decorator functions for coercing Angular component @Inputs into specific types",
   "keywords": [
     "Angular",
     "decorator",
-    "coercions",
-    "inputs"
+    "coercion",
+    "input",
+    "@Input()",
+    "attribute",
+    "helper",
+    "util",
+    "TypeScript",
+    "Angular 7",
+    "Angular 8",
+    "ng",
+    "ng 2"
   ],
   "version": "0.2.1",
   "license": "MIT",
