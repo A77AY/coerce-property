@@ -60,7 +60,7 @@ npm i -S coerce-property
 
         ```ts
         @Input()
-        @coerceNumber
+        @coercePixel
         width: string; // '200px'
         ```
 
