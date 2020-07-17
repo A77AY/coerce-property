@@ -10,13 +10,15 @@
     "attribute",
     "helper",
     "util",
+    "ng",
+    "ng 2",
     "TypeScript",
     "Angular 7",
     "Angular 8",
-    "ng",
-    "ng 2"
+    "Angular 9",
+    "Angular 10"
   ],
-  "version": "0.2.3",
+  "version": "0.3.0",
   "license": "MIT",
   "author": {
     "name": "Rinat Arsaev",
@@ -37,16 +39,15 @@
     "coverage": "jest --coverage"
   },
   "devDependencies": {
-    "@angular/cdk": "8.2.3",
-    "@angular/common": "^8.2.14",
-    "@angular/core": "^8.2.14",
-    "@types/jest": "^25.1.1",
-    "jest": "^25.1.0",
-    "rxjs": "^6.5.4",
+    "@angular/cdk": "7.3.0",
+    "@angular/core": "^7.2.16",
+    "@types/jest": "^26.0.4",
+    "jest": "^26.1.0",
+    "rxjs": "^6.6.0",
     "shx": "^0.3.2",
-    "ts-jest": "^25.1.0",
-    "ts-node": "^8.6.2",
-    "typescript": "^3.7.5"
+    "ts-jest": "^26.1.3",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
   },
   "peerDependencies": {
     "@angular/cdk": ">=7.3.0"
