@@ -1,0 +1,35 @@
+{
+  "name": "coerce-property",
+  "description": "Utility decorator functions for coercing Angular component @Inputs into specific types",
+  "keywords": [
+    "angular",
+    "decorator",
+    "coercion",
+    "input",
+    "input",
+    "attribute",
+    "helper",
+    "util",
+    "ng",
+    "TypeScript"
+  ],
+  "version": "15.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Rinat Arsaev",
+    "email": "krickray@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KrickRay/coerce-property"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=15.0.0",
+    "@angular/core": ">=15.0.0",
+    "@angular/cdk": ">=15.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

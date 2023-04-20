@@ -1,9 +1,9 @@
 import {
-    coerceBooleanProperty,
-    coerceArray as coerceArrayProperty,
-    coerceCssPixelValue,
-    coerceElement as coerceElementProperty,
-    coerceNumberProperty
+  coerceBooleanProperty,
+  coerceArray as coerceArrayProperty,
+  coerceCssPixelValue,
+  coerceElement as coerceElementProperty,
+  coerceNumberProperty,
 } from "@angular/cdk/coercion";
 
 import { coerce } from "./coerce";
