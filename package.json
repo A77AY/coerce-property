@@ -8,6 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "workspaces": [
+    "./projects/*"
+  ],
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.2.0",

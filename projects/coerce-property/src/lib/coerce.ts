@@ -11,7 +11,7 @@ export function coerce<
   afterFn?: (value: O, self: T) => void
 ): PropertyDecorator {
   return function (target: T, propertyKey: P) {
-    const _key = Symbol();
+    const _key = Symbol() as keyof T;
     target[_key] = target[propertyKey];
     Object.defineProperty(target, propertyKey, {
       get: function () {
@@ -26,5 +26,5 @@ export function coerce<
             this[_key] = coerceFn.call(this, v, this);
           },
     });
-  };
+  } as PropertyDecorator;
 }
