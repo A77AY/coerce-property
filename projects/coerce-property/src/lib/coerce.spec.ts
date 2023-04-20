@@ -4,7 +4,7 @@ describe("coerce", () => {
   describe("init ...", () => {
     class Sample {
       @coerce((v) => String(v))
-      withoutDef;
+      withoutDef: any;
 
       @coerce((v) => String(v))
       defUndefined = undefined;
@@ -25,15 +25,15 @@ describe("coerce", () => {
 
     describe("with default ... value should call decorator function", () => {
       it("undefined", () => {
-        expect(new Sample().defUndefined).toBe("undefined");
+        expect(new Sample().defUndefined as any).toBe("undefined");
       });
 
       it("null", () => {
-        expect(new Sample().defNull).toBe("null");
+        expect(new Sample().defNull as any).toBe("null");
       });
 
       it("0", () => {
-        expect(new Sample().def0).toBe("0");
+        expect(new Sample().def0).toBe("0" as any);
       });
 
       it("empty string", () => {
@@ -93,27 +93,14 @@ describe("coerce", () => {
 
     describe("arrow function ... property from this", () => {
       class Sample {
-        strBefore = "before";
-
         @coerce(() => {
-          return this.strBefore;
+          return this;
         })
-        strWithBefore = "str";
-
-        @coerce(() => {
-          return this.strAfter;
-        })
-        strWithAfter = "str";
-
-        strAfter = "after";
+        str = "str";
       }
 
-      it("shouldn't get before init", () => {
-        expect(new Sample().strWithBefore).toBeUndefined();
-      });
-
-      it("shouldn't get after init", () => {
-        expect(new Sample().strWithAfter).toBeUndefined();
+      it("should undefined", () => {
+        expect(new Sample().str).toBeUndefined();
       });
     });
 

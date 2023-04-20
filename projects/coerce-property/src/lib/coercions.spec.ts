@@ -16,7 +16,7 @@ describe("coercions", () => {
 
     it("null to false", () => {
       const sample = new Sample();
-      sample.num1ToBoolean = null;
+      sample.num1ToBoolean = null as any;
       expect(sample.num1ToBoolean).toBeFalsy();
     });
   });
